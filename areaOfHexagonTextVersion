@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class areaOfHexagon {
+
+	public static void main(String[] args) {
+		
+		//area of hexagon = (6 x s^2)/(4 x tan(pi/6))
+		//gonna need a scanner to get user input for side length
+		//s in area equation is the side length
+		Scanner input = new Scanner (System.in);
+		double sideLength;
+		double area;
+		
+		System.out.println("Please enter a side length: ");
+		sideLength = input.nextDouble();
+		area =(6 * Math.pow(sideLength, 2))/(4 * Math.tan(Math.PI / 6));
+		
+		System.out.println("The area of the hexagon is: " + area);
+		
+	}
+
+}
